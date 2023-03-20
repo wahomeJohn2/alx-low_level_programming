@@ -3,15 +3,15 @@
 /**
  * main - main function
  * Return: always something
+ *
  */
 int main(void)
 {
-	char i;
+	int j;
 
-	for (i = 'a'; i <= 'z'; i++)
-		if (i != 'e' && i != 'q')
-			putchar(i);
-
-	putchar('\n');
+	for (j = 0; j < 10; j++)
+		printf("%d",j);
+	printf("\n");
 		return (0);
 }
+

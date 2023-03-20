@@ -4,14 +4,16 @@
  * main - main function
  * Return: always something
  */
+
 int main(void)
 {
-	char i;
+	int i;
+	char j;
 
-	for (i = 'a'; i <= 'z'; i++)
-		if (i != 'e' && i != 'q')
-			putchar(i);
-
+	for (i = 0; i <= 9; i++)
+		putchar(i + 48);
+	for (j = 'a'; j <= 'f'; j++)
+		putchar(j);
 	putchar('\n');
 		return (0);
 }
