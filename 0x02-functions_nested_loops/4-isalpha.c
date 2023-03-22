@@ -2,7 +2,7 @@
 
 /**
  *_isalpha - checks the alphabet
- *
+ *@c: paramater to be printed
  *Return: always something
  */
 
