@@ -4,14 +4,26 @@
  * @s: parameter
  * Return: nothing
  */
-
 void rev_string(char *s)
 {
-	int i;
-	int count = 0;
+	int count = 0, i, j;
+	char *str, temp;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (count >= 0)
+	{
+		if (s[count] == '\0')
+			break;
 		count++;
-	for (i = count; i >= 0; i--)
-		_putchar(s[i]);i
+	}
+	str = s;
+
+	for (i = 0; i < (count - 1); i++)
+	{
+		for (j = i + 1; j > 0; j--)
+		{
+			temp = *(str + j);
+			*(str + j) = *(str + (j - 1));
+			*(str + (j - 1)) = temp;
+		}
+	}
 }
