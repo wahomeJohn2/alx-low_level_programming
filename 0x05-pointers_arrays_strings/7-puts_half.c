@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * puts_half - function that prints half
+ * @str: parameter
+ * Return: nothing
+ */
 void puts_half(char *str)
 {
 	int i;
@@ -7,16 +12,16 @@ void puts_half(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 		length++;
-	
+
 	if (length % 2 == 0)
 	{
-		for (i = length/2; str[i] != '\0'; i++)
+		for (i = length / 2; str[i] != '\0'; i++)
 			_putchar(str[i]);
 		_putchar('\n');
 	}
-	else
+	else if (length % 2 != 0)
 	{
-		for (i = (length - 1)/2; str[i] != '\0'; i++)
+		for (i = (length - 1) / 2; str[i] != '\0'; i++)
 			_putchar(str[i]);
 		_putchar('\n');
 	}
