@@ -7,16 +7,16 @@
  * @src: parameter
  * Return: nothing
  */
-
 char *_strcpy(char *dest, char *src)
 {
-	int i;
+	int count = 0;
 
-	if (dest == NULL)
-		return (NULL);
-
-	for (i = 0; src[i] != '\0'; i++)
-		dest[i] = src[i];
+	while (count >= 0)
+	{
+		*(dest + count) = *(src + count);
+		if (*(src + count) == '\0')
+			break;
+		count++;
+	}
 	return (dest);
 }
-
