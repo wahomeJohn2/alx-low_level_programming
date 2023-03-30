@@ -11,11 +11,10 @@
 void reverse_array(int *a, int n)
 {
 	int i;
-       	int ch;
+	int ch;
 
 	/* n-- is n = n-1 because the last position is garbage*/
 	n--;
-	
 	for (i = 0; i <= n; n--, i++)
 	{
 		ch = a[i];
